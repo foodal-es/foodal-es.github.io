@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: Goals
+  link: /goals.html
+- name: Participants
+  link: /participants.html
+- name: Services
+  link: /services.html
+- name: Events
+  link: /events.html
+- name: Updates
+  link: /updates.html
+- name: Contact
+  link: /contact.html

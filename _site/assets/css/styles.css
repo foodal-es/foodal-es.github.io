@@ -1,0 +1,86 @@
+#contact {
+  padding: 2rem;
+  text-align: center; }
+
+.front-page {
+  padding: 2rem; }
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.info {
+  display: inline-block;
+  background-color: #2f3c48;
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%; }
+
+.main {
+  display: inline-block;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 59%;
+  overflow-y: scroll;
+  padding-right: 2rem;
+  padding-top: 5rem; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
+  /* Footer height */ }
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100%; }
+
+#profile-pic-mainpage {
+  border-radius: 50%;
+  width: 150px;
+  padding: 1rem; }
+
+.card-container {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem; }
+
+#infographic {
+  padding-left: 5rem;
+  padding-bottom: 5rem; }
+
+.synopsis {
+  font-size: 30px;
+  padding-top: 1rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+  padding-left: 2rem; }
+
+img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */ }
+
+.sticky {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0; }
