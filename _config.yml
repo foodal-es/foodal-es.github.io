@@ -1,3 +1,9 @@
 collections:
     staff:
         output: true
+    events:
+        output: true
+        permalink: /events/:path/
+        title: Events
+    news:
+        output: true

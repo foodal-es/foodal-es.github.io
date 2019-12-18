@@ -2,6 +2,26 @@
 layout: default
 title: Foodal
 ---
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+<script type="text/javascript" src="/scripts/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css">
+<link rel="stylesheet" media="print" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.print.css">
+
+<script>
+
+$(document).ready(function() {
+
+	$('#calendar').fullCalendar({
+		events:'/calendar-data'
+	})
+
+});
+
+</script>
+
 <!-- <div class="container-flex bg-primary text-white front-page">
   <div class="container">
 	  <h1 class="display-1">Foodal</h1>
@@ -24,57 +44,203 @@ title: Foodal
 		<div class="col-sm-12">
 
 			<p class="synopsis">
-				<strong>Foodal</strong> is Comunidad de Madrid funded project
-				in which we develop new devices to detect allergens in food. Our
-				approach allows <em>in situ</em> detection, thus reducing time
-				and money costs, and allowing restaurants to be always confident
-				about the food they provide.
+				FOODAL is a project funded by Comunidad de Madrid, that is
+				oriented from a translational point of view, addressing the
+				problems encountered in the management of food allergies,
+				both at the levels of food safety and treatment.
+			</p>
 
+			<p class="synopsis">
+				We propose
+				a multidisciplinary approach integrating the consortium's
+				experience in health biotechnology, particle nanotechnology
+				and animal models, with the aim of developing two innovative
+				solutions. These two solutions aim to be transferred to the
+				private sector for its exploitation in order to improve the
+				quality of life of allergic patients.
 			</p>
 
 		</div>
 	</div>
 </div>
 
-<div class="container front-page">
-	<h1 class="display-4">Who are we</h1>
-	<div class="row">
-		<div class="col-sm-6">
 
-			<img src="assets/people_group.jpg" alt="" width="100%">
 
-		</div>
+<div class="container front-page" id="goals">
+	<h1 class="display-4">Our goals</h1>
 
-		<div class="col-sm-6">
 
-			<p class="vertical-center">
-				We are a group of multidisciplar teams located at Madrid (Spain).
+	<h2 class="display-5">Detection of hidden allergens</h2>
 
-			</p>
+	<p>
+		We are working on the development of a revolutionary tool able to
+		detect hidden allergens in food matrices. These way, accidental
+		interactions between allergic patients and the allergens could be
+		avoided by means of a portable and easily usable system in all food
+		distribution points. </p>
 
-		</div>
-	</div>
+	<h2 class="display-5">Development of a new formula for the treatment of
+		food allergy</h2>
+
+	<p>
+		Allergy is a pathology that currently does not count on a treatment,
+		different than the avoidance of the foods involved and the drugs used
+		to palliate the symptoms after an allergic reaction. Under these
+		circumstances, we propose a new immunotherapy formula aiming to
+		<em>cure</em>' or at least alleviate the disease.
+	</p>
+<!--
+	<p class="synopsis">
+		Allergy is nowadays an important food risk with a rising prevalence. The
+		<em>10% of visits to urgencies</em> are related to
+		<em>food allergy attacks</em>, mostly due to accidental contacts with
+		food allergens in the food.
+
+
+
+
+	</p>
+
+	<p class="synopsis">
+		<strong>Our goal is to develop two tools that allow to handle and prevent
+			allergy by combining Viral Nanoparticles and antibodies
+			to detect hidden allergens in food.
+		</strong>
+	</p> -->
+
+	<!-- <h1 class="display-5">How?</h1> -->
+
+	<!-- <div id="infographic">
+		<img src="/assets/foodal_infographic.png" alt="" width="95%">
+	</div> -->
+
+
 </div>
 
-<div class="container front-page">
-	<h1 class="display-4">Our technology</h1>
-	<div class="row">
-		<div class="col-sm-6">
 
-			<img src="assets/biochemistry.jpg" alt="" width="100%">
+
+<div class="container front-page" id="people">
+
+	<h1 class="display-4">Our team</h1>
+
+	<p class="synopsis"> At Foodal, we believe that
+		<strong>multidisciplarity</strong> is the only way to reach important
+		steps towards knowdlege and innovation. Different groups, providing
+		different skills and point of views work toghether in this project
+		to reach our goals.
+	</p>
+
+
+	<div class="card-container">
+		{% for participant in site.staff %}
+
+		<div class="card">
+
+			<div class="card-header">
+				<h3 class="card-title"> <a href="http://{{ participant.link }}">
+					{{ participant.name }}
+				</a> </h3>
+			</div>
+			<div class="card-body">
+				<img src="{{ participant.pic }}" alt=""
+				class="card-img-top profile-pic">
+			</div>
 
 		</div>
 
-		<div class="col-sm-6">
-
-			<p class="vertical-center">
-
-				Foodal technology is based in the use of Viral-Nano Particles.
-				Those are particles once belonging to virus that have been
-				functionalized by joining them to specific antibodies.
-
-			</p>
-
-		</div>
+		{% endfor %}
 	</div>
+
+</div>
+
+
+<div class="container front-page" id="services">
+
+	<h1 class="display-4">Our services</h1>
+
+	<p class="synopsis">
+
+		We provide microscopy services through our particpant, the lab 390 of
+		the <em>Red de Laboratorios de la Comunidad de Madrid</em>. Its
+		services can be consulted
+		<a href="http://www.cbgp.upm.es/index.php/es/servicios/servicio-microscopia">here</a>.
+
+
+	</p>
+
+
+</div>
+
+<div class="container front-page" id="events">
+
+	<h1 class="display-4">Next events</h1>
+
+	<p class="synopsis"> Check our latest events (talks, seminars, workshops,
+		and meetings) in our calendar.
+	</p>
+
+	<div id="calendar"></div>
+
+
+</div>
+
+<div class="container front-page" id="updates">
+
+	<h1 class="display-4">News</h1>
+
+	<p class="synopsis"> In our blog, we'll post our latest results and news;
+		including job offers, patents and publications, and other news.
+	</p>
+
+	<ul>
+		{% for post in site.news %}
+	  	<li>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+
+	  	</li>
+		{% endfor %}
+	</ul>
+
+
+
+
+</div>
+
+
+<div class="container front-page" id="contact">
+
+	<h1 class="display-4">Contact with us</h1>
+
+	<p class="synopsis">
+
+		You can contact with us by mail writting to the following addresses
+
+	</p>
+
+	<ul>
+		<li> <strong>Coordinator Mail</strong> araceli.diaz@upm.es </li>
+		<li> <strong>Project Manager Mail</strong> alejandro.romero.sahagun@upm.es </li>
+	</ul>
+
+
+	<div class="container">
+
+		<h1 class="display-4">Funded by</h1>
+
+		<img src="/assets/logos.png" alt="" width="100%">
+		<!-- <div class="row"> -->
+
+			<!-- <div class="col-sm-2">
+				<img src="/assets/logoCAM.png" alt="" width=60%>
+			</div>
+			<div class="col-sm-7">
+				<img src="/assets/logo_feder.jpg" alt="" width=100%>
+			</div>
+			<div class="col-sm-5">
+				<img src="/assets/logo-FSE.jpg" alt="" width=100%>
+			</div> -->
+		<!-- </div> -->
+
+	</div>
+
 </div>

@@ -1,14 +1,14 @@
 - name: Home
   link: /
 - name: Goals
-  link: /goals.html
+  link: /#goals
 - name: Participants
-  link: /participants.html
+  link: /#people
 - name: Services
-  link: /services.html
+  link: /#services
 - name: Events
-  link: /events.html
+  link: /#events
 - name: Updates
-  link: /updates.html
+  link: /#updates
 - name: Contact
-  link: /contact.html
+  link: /#contact
