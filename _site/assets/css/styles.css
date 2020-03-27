@@ -1,6 +1,5 @@
 #contact {
-  padding: 2rem;
-  text-align: center; }
+  padding: 2rem; }
 
 .front-page {
   padding: 2rem; }
@@ -20,7 +19,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 40%; }
+  width: 45%; }
 
 .main {
   display: inline-block;
@@ -29,10 +28,23 @@
   right: 0;
   top: 0;
   height: 100%;
-  width: 59%;
+  width: 55%;
   overflow-y: scroll;
   padding-right: 2rem;
   padding-top: 5rem; }
+
+.blog-main {
+  display: inline-block;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  overflow-y: scroll;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  padding-left: 2rem; }
 
 .footer {
   position: absolute;
@@ -46,14 +58,17 @@
   width: 100%; }
 
 #profile-pic-mainpage {
-  border-radius: 50%;
+  border-radius: 100%;
   width: 150px;
   padding: 1rem; }
+
+.card-title {
+  font-size: 1.25rem; }
 
 .card-container {
   display: grid;
   padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem; }
 
 #infographic {
@@ -61,7 +76,7 @@
   padding-bottom: 5rem; }
 
 .synopsis {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 1rem;
   font-weight: 300;
   padding-bottom: 2rem;

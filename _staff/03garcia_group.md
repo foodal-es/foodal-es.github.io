@@ -1,6 +1,6 @@
 ---
 layout: participants
-name: García's group
-pic: /assets/bruno.jpg
+name: Teresa Jarcía
+pic: /assets/pic_Teresa.jpg
 link: www.ucm.es/grupos/grupo/95
 ---
